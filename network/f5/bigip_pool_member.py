@@ -306,7 +306,7 @@ def get_member_monitor_status(api, pool, address, port):
     return result
 
 def main():
-    argument_spec = f5_argument_spec();
+    argument_spec = f5_argument_spec()
     argument_spec.update(dict(
             session_state = dict(type='str', choices=['enabled', 'disabled']),
             monitor_state = dict(type='str', choices=['enabled', 'disabled']),

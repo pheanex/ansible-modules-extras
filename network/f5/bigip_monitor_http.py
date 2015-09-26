@@ -295,7 +295,7 @@ def set_ipport(api, monitor, ipport):
 def main():
 
     # begin monitor specific stuff
-    argument_spec=f5_argument_spec();
+    argument_spec=f5_argument_spec()
     argument_spec.update( dict(
             name      = dict(required=True),
             parent    = dict(default=DEFAULT_PARENT_TYPE),

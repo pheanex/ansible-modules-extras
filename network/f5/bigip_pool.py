@@ -347,7 +347,7 @@ def main():
 
     service_down_choices = ['none', 'reset', 'drop', 'reselect']
 
-    argument_spec=f5_argument_spec();
+    argument_spec=f5_argument_spec()
     argument_spec.update(dict(
             name = dict(type='str', required=True, aliases=['pool']),
             lb_method = dict(type='str', choices=lb_method_choices),

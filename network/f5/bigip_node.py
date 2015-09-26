@@ -262,7 +262,7 @@ def get_node_monitor_status(api, name):
 
 
 def main():
-    argument_spec=f5_argument_spec();
+    argument_spec=f5_argument_spec()
     argument_spec.update(dict(
             session_state = dict(type='str', choices=['enabled', 'disabled']),
             monitor_state = dict(type='str', choices=['enabled', 'disabled']),

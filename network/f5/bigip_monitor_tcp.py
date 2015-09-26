@@ -314,7 +314,7 @@ def set_ipport(api, monitor, ipport):
 def main():
 
     # begin monitor specific stuff
-    argument_spec=f5_argument_spec();
+    argument_spec=f5_argument_spec()
     argument_spec.update(dict(
             name      = dict(required=True),
             type      = dict(default=DEFAULT_TEMPLATE_TYPE_CHOICE, choices=TEMPLATE_TYPE_CHOICES),

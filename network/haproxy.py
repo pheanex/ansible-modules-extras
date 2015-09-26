@@ -196,7 +196,7 @@ class HAProxy(object):
                 if row['pxname'] == pxname and row['svname'] == svname:
                     found = True
                     if row['status'] == status:
-                        return True;
+                        return True
                     else:
                         time.sleep(self.wait_interval)
 
